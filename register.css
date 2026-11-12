@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2b3446;
+}
+
+
+.register-page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.brand-panel {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1f2b47;
+}
+
+.brand-content {
+    width: 100%;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+    margin-bottom: 2.4rem;
+
+    color: #ffffff;
+}
+
+.home-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: block;
+}
+
+.brand-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.brand-message {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7fb2d9;
+}
+
+
+.form-panel {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem;
+
+    background-color: #ffffff;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 30rem;
+}
+
+
+.register-header {
+    margin-bottom: 2.2rem;
+}
+
+.register-header h1 {
+    margin-bottom: 0.75rem;
+
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #202633;
+}
+
+.register-header p {
+    font-size: 1rem;
+    color: #6b7689;
+}
+
+
+.register-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    color: #2b3446;
+}
+
+.form-group input {
+    width: 100%;
+    height: 3.25rem;
+
+    padding: 0 0.875rem;
+
+    border: 0.0625rem solid #8c96a6;
+    border-radius: 0;
+
+    background-color: #ffffff;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #2b3446;
+
+    outline: none;
+
+    transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #6b7689;
+}
+
+.form-group input:focus {
+    border: 0.125rem solid #1f2b47;
+}
+
+
+.form-group input.input-error {
+    border: 0.125rem solid #e5484d;
+}
+
+.form-group input.input-error:focus {
+    border-color: #e5484d;
+}
+
+.error-message {
+    min-height: 1.1rem;
+    margin-top: 0.35rem;
+
+    font-size: 0.78rem;
+    line-height: 1.2;
+
+    color: #e5484d;
+}
+
+
+.form-error {
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0.875rem;
+
+    border-left: 0.25rem solid #e5484d;
+
+    background-color: #fdecec;
+    color: #b42318;
+
+    font-size: 0.875rem;
+}
+
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 3.2rem;
+}
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 0.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+
+.create-account-button {
+    width: 100%;
+    height: 3.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    margin-top: 0.5rem;
+
+    border: none;
+    border-radius: 0.3rem;
+
+    background-color: #e5484d;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.create-account-button:hover {
+    background-color: #c73a3f;
+}
+
+
+.sign-in-text {
+    margin-top: 1.9rem;
+
+    text-align: center;
+
+    font-size: 0.875rem;
+    color: #2b3446;
+}
+
+.sign-in-text a {
+    color: #e5484d;
+    text-decoration: underline;
+}
+
+
+.create-account-button:focus-visible,
+.password-toggle:focus-visible,
+.sign-in-text a:focus-visible {
+    outline: 0.1875rem solid #1f2b47;
+    outline-offset: 0.1875rem;
+}
+
+
+@media (max-width: 50rem) {
+
+    .register-page {
+        flex-direction: column;
+    }
+
+    .brand-panel {
+        width: 100%;
+        min-height: 14rem;
+    }
+
+    .brand-content {
+        padding: 2rem 1.25rem;
+    }
+
+    .brand {
+        margin-bottom: 1.25rem;
+    }
+
+    .brand-name {
+        font-size: 2rem;
+    }
+
+    .form-panel {
+        width: 100%;
+        min-height: auto;
+
+        padding: 3rem 1.5rem;
+    }
+
+    .register-container {
+        max-width: 32rem;
+    }
+
+    .register-header h1 {
+        font-size: 2rem;
+    }
+}

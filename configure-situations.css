@@ -1,0 +1,521 @@
+.cs-form-card {
+  margin-bottom: 1.5rem;
+}
+
+.cs-title {
+  margin-bottom: 0.25rem;
+}
+
+.cs-intro {
+  margin-bottom: 1.25rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+#situation-status {
+  margin-bottom: 1rem;
+}
+
+.cs-field input {
+  width: 100%;
+}
+
+.cs-muted {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.cs-small {
+  font-size: 0.8rem;
+}
+
+.cs-hint {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.cs-group {
+  margin: 1.4rem 0 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+}
+
+.cs-group .field-error {
+  margin-top: 0.5rem;
+}
+
+.cs-group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cs-legend {
+  float: left;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1f2b47;
+}
+
+.cs-group > .cs-legend {
+  float: none;
+  margin-bottom: 0.75rem;
+}
+
+.cs-group-head + * {
+  clear: both;
+}
+
+.cs-link-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cs-link {
+  padding: 0.25rem 0.4rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: none;
+  font: inherit;
+  font-size: 0.82rem;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.cs-link:hover {
+  text-decoration: underline;
+}
+
+.cs-link-accent {
+  color: #e5484d;
+  font-weight: 600;
+}
+
+.cs-room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.6rem;
+}
+
+.cs-room {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2b3446;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.cs-room:hover {
+  border-color: #e5484d;
+}
+
+.cs-room.is-checked {
+  border-color: #e5484d;
+  background-color: #fdecec;
+}
+
+.cs-room.is-disabled {
+  border-style: dashed;
+  background: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.cs-room.is-disabled:hover {
+  border-color: #d1d5db;
+}
+
+.cs-room-missing {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.cs-room input {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex-shrink: 0;
+  accent-color: #e5484d;
+  cursor: inherit;
+}
+
+.cs-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cs-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+}
+
+.cs-action-row {
+  border-color: #f5c2c4;
+  background-color: #fff5f5;
+}
+
+.cs-row select,
+.cs-row input {
+  height: 2.4rem;
+  padding: 0 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: #2b3446;
+  min-width: 0;
+}
+
+.cs-row option.is-available {
+  font-weight: 700;
+  color: #1f2b47;
+}
+
+.cs-row option.is-missing {
+  color: #9ca3af;
+}
+
+.cs-row .input-error {
+  border: 2px solid #e5484d;
+}
+
+.cs-grow {
+  flex: 2 1 10rem;
+}
+
+.cs-mid {
+  flex: 1 1 7rem;
+}
+
+.cs-row .cs-num {
+  flex: 0 1 6rem;
+  width: 6rem;
+}
+
+.cs-unit {
+  font-size: 0.82rem;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.cs-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.cs-duration[hidden] {
+  display: none;
+}
+
+.cs-row .cs-duration input {
+  width: 4.5rem;
+  padding: 0 0.5rem;
+}
+
+.cs-row .cs-time-range input {
+  flex: 0 1 7rem;
+  width: 7rem;
+}
+
+.cs-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 1px solid #e5484d;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e5484d;
+}
+
+.cs-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.cs-remove img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.cs-remove:hover {
+  border-color: #e5484d;
+}
+
+.cs-remove:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cs-add-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cs-add {
+  padding: 0.5rem 0.9rem;
+  border: 1px dashed #9ca3af;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f2b47;
+  cursor: pointer;
+}
+
+.cs-add:hover {
+  border-color: #e5484d;
+  color: #e5484d;
+}
+
+.cs-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #f0f1f3;
+}
+
+.cs-form-footer .admin-btn {
+  min-width: 5.5rem;
+  padding: 0.65rem 1.3rem;
+}
+
+.cs-list-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cs-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.cs-sit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+.cs-sit-card.is-off {
+  border-style: dashed;
+  background: #f9fafb;
+}
+
+.cs-sit-card.is-editing {
+  border-color: #e5484d;
+  box-shadow: 0 0 0 1px #e5484d;
+}
+
+.cs-sit-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cs-sit-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #1f2b47;
+  overflow-wrap: anywhere;
+}
+
+.cs-sit-card.is-off .cs-sit-name {
+  color: #4b5563;
+}
+
+.cs-sit-summary {
+  flex: 1;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: #4b5563;
+  overflow-wrap: anywhere;
+}
+
+.cs-sit-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.cs-sit-state {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #e5484d;
+}
+
+.cs-sit-card.is-off .cs-sit-state {
+  color: #6b7280;
+}
+
+.cs-empty {
+  grid-column: 1 / -1;
+  padding: 1.5rem;
+  border: 1px dashed #d1d5db;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+.cs-switch {
+  position: relative;
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 1.5rem;
+}
+
+.cs-switch input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cs-switch-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background-color: #cbd5e1;
+  pointer-events: none;
+  transition: background-color 0.2s ease;
+}
+
+.cs-switch-track::after {
+  content: "";
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.cs-switch input:checked + .cs-switch-track {
+  background-color: #e5484d;
+}
+
+.cs-switch input:checked + .cs-switch-track::after {
+  transform: translateX(1.25rem);
+}
+
+.cs-switch input:hover:checked + .cs-switch-track {
+  background-color: #c73a3f;
+}
+
+.cs-switch input:focus-visible + .cs-switch-track,
+.cs-room:focus-within,
+.cs-link:focus-visible,
+.cs-add:focus-visible,
+.cs-remove:focus-visible,
+.cs-row select:focus-visible,
+.cs-row input:focus-visible,
+.cs-field input:focus-visible {
+  outline: 0.1875rem solid #1f2b47;
+  outline-offset: 0.125rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-switch-track,
+  .cs-switch-track::after,
+  .cs-room {
+    transition: none;
+  }
+}
+
+@media (max-width: 32.5em) {
+  .cs-room-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cs-row {
+    padding: 0.5rem;
+  }
+
+  .cs-row select,
+  .cs-row input {
+    flex-basis: 100%;
+  }
+
+  .cs-row .cs-num {
+    flex: 1 1 auto;
+  }
+
+  .cs-remove {
+    margin-left: auto;
+  }
+
+  .cs-form-footer .admin-btn {
+    flex: 1;
+  }
+
+  .cs-card-grid {
+    grid-template-columns: 1fr;
+  }
+}

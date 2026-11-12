@@ -1,0 +1,44 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #2b3446;
+}
+
+button,
+select,
+label,
+output,
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+ 
+
+.content {
+  flex: 1;
+  margin-left: 16rem;
+  padding: 2.5rem 5%;
+}
+
+.compact-nav .content {
+  margin-left: 0;
+  padding-top: 5rem;
+}

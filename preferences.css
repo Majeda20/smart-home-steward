@@ -1,0 +1,377 @@
+.prefs-column {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.prefs-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.prefs-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2b47;
+}
+
+.prefs-header p {
+  font-size: 0.95rem;
+  color: #6b7689;
+}
+
+.prefs-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #dfe3e8;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.prefs-card h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f2b47;
+}
+
+.prefs-card-danger {
+  margin-top: 1.5rem;
+  border-color: #fecaca;
+  box-shadow: none;
+}
+
+.prefs-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prefs-profile {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.prefs-profile div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.prefs-profile dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7689;
+}
+
+.prefs-profile dd {
+  font-size: 0.95rem;
+  color: #1f2b47;
+  overflow-wrap: anywhere;
+}
+
+.prefs-password-mask {
+  letter-spacing: 0.15em;
+}
+
+.prefs-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+  border: 0;
+}
+
+.prefs-fieldset legend {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2b47;
+}
+
+.prefs-hint {
+  font-size: 0.8rem;
+  color: #6b7689;
+}
+
+.prefs-text {
+  max-width: 32.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #6b7689;
+}
+
+.prefs-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.prefs-option {
+  flex: 1 1 13.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 4rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid #dfe3e8;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.prefs-option:hover,
+.prefs-check:hover {
+  border-color: #e5484d;
+}
+
+.prefs-option:has(input:checked) {
+  border: 2px solid #e5484d;
+  padding: calc(0.875rem - 1px) calc(1rem - 1px);
+  background: #fff5f5;
+}
+
+.prefs-option input,
+.prefs-check input {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: #e5484d;
+}
+
+.prefs-option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.prefs-option-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2b47;
+}
+
+.prefs-option-sub {
+  font-size: 0.8rem;
+  color: #6b7689;
+}
+
+.prefs-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.prefs-check {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dfe3e8;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.prefs-check:has(input:checked) {
+  border-color: #e5484d;
+  background: #fff5f5;
+}
+
+.prefs-check-label {
+  flex: 1 1 auto;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2b47;
+}
+
+.prefs-option:has(input:focus-visible),
+.prefs-check:has(input:focus-visible) {
+  outline: 3px solid rgba(229, 72, 77, 0.45);
+  outline-offset: 2px;
+}
+
+.prefs-status {
+  min-height: 1.2em;
+  font-size: 0.8rem;
+  color: #166534;
+}
+
+.prefs-status.is-error {
+  color: #e5484d;
+}
+
+.prefs-status.is-saving {
+  color: #6b7689;
+}
+
+.prefs-btn-outline,
+.prefs-btn-danger-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.prefs-btn-outline {
+  border: 1px solid #dfe3e8;
+  color: #1f2b47;
+}
+
+.prefs-btn-outline:hover {
+  border-color: #e5484d;
+  color: #e5484d;
+}
+
+.prefs-btn-danger-outline {
+  border: 1px solid #e5484d;
+  color: #e5484d;
+}
+
+.prefs-btn-danger-outline:hover {
+  background: #fff5f5;
+}
+
+.prefs-btn-outline img,
+.prefs-btn-danger-outline img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.prefs-btn-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: url("../../images/icons/edit-dark.svg") no-repeat center / contain;
+  mask: url("../../images/icons/edit-dark.svg") no-repeat center / contain;
+}
+
+.prefs-btn-outline:focus-visible,
+.prefs-btn-danger-outline:focus-visible,
+.prefs-dialog-close:focus-visible {
+  outline: 3px solid rgba(229, 72, 77, 0.45);
+  outline-offset: 2px;
+}
+
+.prefs-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.prefs-dialog-header h2 {
+  margin-bottom: 0;
+}
+
+.prefs-dialog-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.prefs-dialog-close:hover {
+  background: #f1f3f6;
+}
+
+.prefs-dialog-close img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.prefs-dialog-section {
+  margin-top: 0.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid #eef0f3;
+}
+
+.prefs-dialog-section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2b47;
+}
+
+.prefs-dialog-section > .prefs-hint {
+  margin-bottom: 0.9rem;
+}
+
+.prefs-page .admin-message {
+  margin-bottom: 0;
+}
+
+#profile-dialog h2,
+#delete-dialog h2 {
+  color: #1f2b47;
+}
+
+#profile-dialog .admin-btn-primary,
+#delete-dialog .admin-btn-danger {
+  background: #e5484d;
+}
+
+#profile-dialog .admin-btn-primary:hover:not(:disabled),
+#delete-dialog .admin-btn-danger:hover:not(:disabled) {
+  background: #d63c41;
+}
+
+#profile-dialog .admin-btn-secondary,
+#delete-dialog .admin-btn-secondary {
+  color: #1f2b47;
+}
+
+#profile-dialog .admin-btn-secondary:hover:not(:disabled),
+#delete-dialog .admin-btn-secondary:hover:not(:disabled) {
+  border-color: #e5484d;
+  color: #e5484d;
+}
+
+#profile-dialog .modal-field input:focus-visible,
+#delete-dialog .modal-field input:focus-visible,
+#profile-dialog .admin-btn:focus-visible,
+#delete-dialog .admin-btn:focus-visible {
+  outline-color: rgba(229, 72, 77, 0.45);
+}
+
+@media (max-width: 40em) {
+  .prefs-card {
+    padding: 1rem;
+  }
+
+  .prefs-profile,
+  .prefs-checks {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .prefs-btn-outline,
+  .prefs-btn-danger-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
